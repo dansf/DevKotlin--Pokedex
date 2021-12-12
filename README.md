@@ -1,7 +1,9 @@
 <h2 align="center">
     Pokedex - Kotlin🕹️
 </h2>
-### Projeto em Flutter
+<h3>
+    Projeto em Flutter:
+</h3>
 
 Link: [https://github.com/dansf/Flutter--Pokedex](https://github.com/dansf/Flutter--Pokedex)
 
