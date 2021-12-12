@@ -1,5 +1,5 @@
 <h2 align="center">
-    Pokedex 🕹️
+    Pokedex - Kotlin🕹️
 </h2>
 ### Projeto em Flutter
 
