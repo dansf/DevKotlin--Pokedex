@@ -1,6 +1,9 @@
 <h2 align="center">
     Pokedex 🕹️
 </h2>
+### Projeto em Flutter
+
+Link: [https://github.com/dansf/Flutter--Pokedex](https://github.com/dansf/Flutter--Pokedex)
 
 #### Descrição:
 
