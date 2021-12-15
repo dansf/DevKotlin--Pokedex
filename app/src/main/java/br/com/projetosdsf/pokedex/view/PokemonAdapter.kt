@@ -11,12 +11,19 @@ import br.com.projetosdsf.pokedex.domain.Pokemon
 import com.bumptech.glide.Glide
 import java.util.*
 
+// RecyclerView é o ViewGroup que contém as visualizações correspondentes aos seus dados.
+/*
+ * ViewGroup é um tipo especial de visualização que é estendido de View como sua classe base.
+ * ViewGroup é a classe base dos layouts, como o nome indica, o modo de exibição é singular e
+ * o grupo de modos de exibição é o ViewGroup.
+ */
 class PokemonAdapter(
     val items : List<Pokemon?>
 ) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.pokemon_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.pokemon_item,
+            parent, false)
 
         return ViewHolder(view)
     }
@@ -36,8 +43,6 @@ class PokemonAdapter(
             val tvName = findViewById<TextView>(R.id.tvName)
             val tvType1 = findViewById<TextView>(R.id.tvType1)
             val tvType2 = findViewById<TextView>(R.id.tvType2)
-
-            // TODO: Load image with Glide
 
             item?.let{
                 Glide.with(itemView.context).load(it.imagemUrl).into(ivPokemon)

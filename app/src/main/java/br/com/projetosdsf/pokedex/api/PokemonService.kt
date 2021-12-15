@@ -1,6 +1,5 @@
 package br.com.projetosdsf.pokedex.api
 
-
 import br.com.projetosdsf.pokedex.api.model.PokemonApiResult
 import retrofit2.Call
 import br.com.projetosdsf.pokedex.api.model.PokemonsApiResult

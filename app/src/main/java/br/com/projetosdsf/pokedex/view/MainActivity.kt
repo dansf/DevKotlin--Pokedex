@@ -18,9 +18,14 @@ import br.com.projetosdsf.pokedex.viewmodel.PokemonViewModelFactory
 
 class MainActivity : AppCompatActivity() {
     private val recyclerView by lazy{
+        // RecyclerView é o ViewGroup que contém as visualizações correspondentes aos seus dados.
         findViewById<RecyclerView>(R.id.rvPokemons)
     }
+
     private val viewModel by lazy {
+        /* Cria ViewModelProvider, que criará ViewModels por meio do Factory fornecido e os
+         *   reterá no armazenamento do ViewModelStoreOwner fornecido.
+         */
         ViewModelProvider(this, PokemonViewModelFactory())
             .get(PokemonViewModel::class.java)
     }
